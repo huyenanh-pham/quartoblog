@@ -1,0 +1,23 @@
+{
+  "index.qmd": {
+    "index.html": "20dd3281"
+  },
+  "about.qmd": {
+    "about.html": "ff9f400b"
+  },
+  "posts/post-with-code/index.qmd": {
+    "index.html": "940741b8"
+  },
+  "posts/welcome/index.qmd": {
+    "index.html": "4703513d"
+  },
+  "posts/food-consumption-co2/food-consumption-co2.qmd": {
+    "food-consumption-co2.html": "97713db1"
+  },
+  "posts/penguin/penguin.qmd": {
+    "penguin.html": "4823a0ce"
+  },
+  "posts/hot-ones/hot-ones.qmd": {
+    "hot-ones.html": "78465f8e"
+  }
+}

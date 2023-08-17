@@ -1,0 +1,16 @@
+{
+  "hash": "1c73e6a5babdbb26c284a0bbf06c880a",
+  "result": {
+    "markdown": "---\ntitle: \"Chucky penguins\"\nwarning: FALSE\nexecute:\n  eval: TRUE\n  echo: FALSE\n  include: TRUE\n---\n\n::: {.cell}\n::: {.cell-output-display}\n![](penguin_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "penguin_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

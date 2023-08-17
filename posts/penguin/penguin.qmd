@@ -1,0 +1,25 @@
+---
+title: "Chucky penguins"
+execute:
+  warning: FALSE
+  eval: TRUE
+  echo: FALSE
+  include: TRUE
+---
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+library(ggbeeswarm) 
+theme_set(theme_bw())
+data(penguins)
+
+p <- penguins %>%
+  na.omit()
+
+p %>%
+  ggplot(aes(x = flipper_length_mm, y = body_mass_g)) +
+  geom_point(aes(color=species)) + 
+  labs(title = "Which is the chuckiest penguin species?",
+       x = "Flipper length (mm)", y = "Body mass (g)")
+```

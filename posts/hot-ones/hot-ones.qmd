@@ -1,0 +1,27 @@
+---
+title: "Hot Ones Episodes"
+execute:
+  warning: FALSE
+  eval: TRUE
+  echo: FALSE
+  include: TRUE
+---
+
+# Hot Ones Episodes 
+
+```{r}
+library(tidyverse)
+theme_set(theme_minimal(base_size = 12))
+episodes <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-08-08/episodes.csv')
+sauces <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-08-08/sauces.csv')
+seasons <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-08-08/seasons.csv')
+```
+
+```{r}
+sauces %>% 
+  group_by(season) %>% 
+  mutate(scoville_avg = mean(scoville)) %>% 
+  ggplot(aes(x=season,y=scoville_avg)) + 
+  geom_line()
+```
+
